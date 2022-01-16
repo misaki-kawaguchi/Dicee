@@ -15,8 +15,13 @@ void main() {
   );
 }
 
-class DicePage extends StatelessWidget {
+class DicePage extends StatefulWidget {
 
+  @override
+  _DicePageState createState() => _DicePageState();
+}
+
+class _DicePageState extends State<DicePage> {
   int leftDiceNumber = 5;
 
   @override
@@ -46,3 +51,6 @@ class DicePage extends StatelessWidget {
     );
   }
 }
+
+
+
